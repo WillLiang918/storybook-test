@@ -1,0 +1,26 @@
+{
+  "include": ["stories/**/*.tsx", "stories/**/*.ts"],
+  "compilerOptions": {
+      "allowSyntheticDefaultImports": true,
+      "module": "es2020",
+      "target": "es2020",
+      "jsx": "react",
+      "lib": [ "ES2020", "DOM" ],
+      "skipLibCheck": true,
+      "moduleResolution": "Node",
+      "strict": true,
+      "noImplicitAny": true,
+      "strictPropertyInitialization": false,
+      "resolveJsonModule": true,
+      "moduleSuffixes": [".web", ""]
+  },
+  "exclude": [
+      "node_modules",
+      "**/mobile/*",
+      "**/native/*",
+      "**/*.native.ts",
+      "**/*.native.tsx",
+      "**/*.ios.ts",
+      "**/*.android.ts"
+  ]
+}
